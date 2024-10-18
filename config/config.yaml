@@ -1,0 +1,94 @@
+train:
+  max_epochs: 100
+  max_steps: 10000
+  gradient_clip_val: 10.0
+  limit_train_batches: 400
+  reduce_on_plateau_patience: 500
+  weight_decay: 1e-08
+  dropout: 0.01
+deepar:
+  cell_type: LSTM
+  rnn_layers: 2
+  dataset:
+    exchange_rate_nips:
+      H: 20
+      lr: 1e-02 
+    solar_nips:
+      H: 40
+      lr: 1e-02 
+    electricity_nips:
+      H: 40
+      lr: 1e-02 
+    traffic_nips:
+      H: 40
+      lr: 1e-02 
+    taxi_30min:
+      H: 20
+      lr: 1e-03 
+    wiki2000_nips:
+      H: 10
+      lr: 1e-02 
+    m4_hourly:
+      H: 20
+      lr: 1e-02 
+    m1_quarterly:
+      H: 40
+      lr: 1e-03 
+    pems03_flow:
+      H: 40
+      lr: 1e-02 
+    uber_tlc_hourly:
+      H: 40
+      lr: 1e-02 
+    tourism_quarterly:
+      H: 40
+      lr: 1e-02 
+    m3_monthly:
+      H: 40
+      lr: 1e-02 
+    vehicle_trips_without_missing:
+      H: 40
+      lr: 1e-02 
+gpt:
+  rnn_layers: 2
+  n_heads: 2
+  dataset:
+    exchange_rate_nips:
+      H: 40
+      lr: 1e-03 
+    solar_nips:
+      H: 10
+      lr: 1e-03 
+    electricity_nips:
+      H: 40
+      lr: 1e-02 
+    traffic_nips:
+      H: 20
+      lr: 1e-03 
+    taxi_30min:
+      H: 10
+      lr: 1e-02 
+    wiki2000_nips:
+      H: 40
+      lr: 1e-03 
+    m4_hourly:
+      H: 20
+      lr: 1e-02 
+    m1_quarterly:
+      H: 40
+      lr: 1e-02 
+    pems03_flow:
+      H: 10
+      lr: 1e-02 
+    uber_tlc_hourly:
+      H: 40
+      lr: 1e-02 
+    tourism_quarterly:
+      H: 20
+      lr: 1e-02 
+    m3_monthly:
+      H: 20
+      lr: 1e-02 
+    vehicle_trips_without_missing:
+      H: 40
+      lr: 1e-03 
