@@ -1,0 +1,6 @@
+numpy==1.23.3
+torch==1.13.1+cu117
+tensorboardx==2.6
+pytorch-forecasting==0.10.2
+pytorch-lightning==1.9.4
+gluonts==0.16.0
